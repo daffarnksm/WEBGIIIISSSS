@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGis Kota Bandung</title>
+    <link rel="icon" href="Asset/LOGO-UPI.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous"/>
+
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-
+    button.css">
+    
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-
+    fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+    
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+    
+    <link rel="stylesheet" href="https://balladaniel.github.io/leaflet-dataclassification/leaflet-
+    dataclassification.css" />
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-
+    20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-
+    fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js"
+    charset="utf-8"></script>
+    <script src="https://balladaniel.github.io/leaflet-dataclassification/leaflet-
+    dataclassification.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet-easybutton@2.4.0/src/easy-button.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+        <link rel="stylesheet" href="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script src="https://unpkg.com/leaflet-easybutton@2.4.0/src/easy-button.js"></script>
+        <script src="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.js"></script>
+        <script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js"></script>
+        
+
+</head>
+<body>
+    <canvas id="starCanvas"></canvas>
+    <header id="navbar">
+        <div class="container">
+        <div class="logo">
+        <img src="asset/Logo Bandung.png" alt="Logo" width="100">
+        <h1>WebGIS Kota Bandung</h1>
+        </div>
+        <nav>
+        <ul>
+            
+        <li><a href="#hero-section">Home</a></li>
+        <li><a href="#map-section">Map</a></li>
+        <li><a href="#data-section">Data</a></li>
+        <li><a href="#author-section">Author</a></li>
+        <li><a href="#footer">Contact</a></li>
+        </ul>
+        </nav>
+        </div>
+        </header>
+        <!--Hero Section-->
+        <div id="hero-section" class="hero-section">
+            <div class="hero-content">
+            <h1>WebGIS DI KOTA BANDUNG</h1>
+            <p>LANDCOVER KOTA BANDUNG </p>
+            </div>
+        <!--Map Section--> 
+            </div>
+            <div id="map-section">
+                <h2>PETA TUTUPAN LAHAN KOTA BANDUNG</h2>
+                <div id="map">
+                <!-- akan muncul peta disini -->
+            
+                </div>
+                </div>
+                
+                <!--Data Section--> 
+                <div id="data-section"> 
+                    <h2>PETA LANDCOVER DI KOTA BANDUNG</h2>
+                    <div class="container"> 
+                        <div class="column"> 
+                            <div class="data-item"> 
+                                <img src="https://www.inolabs.net/assets/images/news/590393/590_ef5ea-webgis.png" alt="image 1"> 
+                                <div class="description"> 
+                                    <h3>WEBGIS</h3> 
+                                    <p>WebGIS adalah aplikasi Sistem Informasi Geografis (SIG) yang dioperasikan melalui platform web, memungkinkan akses yang lebih luas dan fleksibel terhadap data spasial tanpa memerlukan perangkat lunak khusus yang kompleks. Teknologi ini menggabungkan kekuatan SIG dengan kemudahan akses internet, sehingga pengguna dari berbagai latar belakang—baik profesional, akademisi, maupun masyarakat umum—dapat melihat, mengolah, dan menganalisis data geografis secara interaktif dan real-time. WebGIS memungkinkan visualisasi data dalam bentuk peta digital yang dapat diperbesar, diperkecil, ditelusuri, serta diperkaya dengan informasi atribut untuk mendukung pemahaman spasial yang lebih dalam. </p>
+                                       
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="column"> 
+                            <div class="data-item"> 
+                              <img src="https://asset.kompas.com/crops/2Vovk5wIpczHkWo4m25fuzaoVuw=/0x0:719x479/1200x800/data/photo/2021/08/23/61233914c4d75.jpg" alt="Image 1"> 
+                              <div class="description"> 
+                                    <h3>Kota Bandung</h3> 
+                                    <p>Kota Bandung dalam konteks geografi merupakan sebuah wilayah administratif yang terletak di bagian barat Pulau Jawa, tepatnya di Provinsi Jawa Barat, Indonesia. Secara geografis, kota ini berada di cekungan Bandung dan dikelilingi oleh pegunungan, sehingga memiliki iklim yang relatif sejuk dibandingkan wilayah lain di sekitarnya. Letaknya yang strategis menjadikan Bandung sebagai pusat kegiatan ekonomi, pendidikan, budaya, dan pemerintahan di wilayah Jawa Barat. Dalam kajian geografi, Kota Bandung dipahami tidak hanya sebagai suatu batas wilayah administratif, tetapi juga sebagai ruang yang memiliki karakteristik fisik (seperti topografi, iklim, dan hidrologi) serta sosial (seperti kepadatan penduduk, pola permukiman, dan aktivitas manusia) yang saling berinteraksi dan membentuk dinamika wilayah perkotaan yang kompleks.</p>
+                                        
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="column"> 
+                            <div class="data-item"> 
+                                <img src="https://community.esri.com/legacyfs/online/499235_17c.jpg" alt="Image 1"> 
+                                <div class="description"> 
+                                    <h3>TUTUPAN LAHAN KOTA BANDUNG</h3>
+                                    <p>WebGIS tutupan lahan Kota Bandung adalah sistem informasi geografis berbasis web yang menyajikan data spasial mengenai jenis-jenis penutupan lahan (land cover) di wilayah Kota Bandung. Melalui platform ini, pengguna dapat melihat, menganalisis, dan mengakses informasi terkini tentang berbagai bentuk penutupan lahan seperti kawasan permukiman, hutan, lahan pertanian, badan air, dan ruang terbuka hijau dalam batas administratif Kota Bandung. Data ini biasanya ditampilkan dalam bentuk peta interaktif yang dilengkapi dengan atribut dan layer yang dapat diaktifkan atau dinonaktifkan sesuai kebutuhan pengguna. WebGIS tutupan lahan sangat berguna bagi perencana wilayah, peneliti, pemerintah daerah, hingga masyarakat umum dalam mendukung pengambilan keputusan terkait tata ruang, pembangunan berkelanjutan, serta konservasi lingkungan di Kota Bandung.</p>
+                                  
+                                    
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div>
+                </div> 
+
+
+                <div id="author-section">     
+                            <div class="author-content"> 
+                                <h2>Tentang Pembuat</h2> 
+                                <img src="asset/DSC_46901.jpg" alt="Profile Picture" class="profile-picture"> 
+                                <div class="author-name"> 
+                                    <h3>Daffa Rana Kusuma</h3> 
+                                    <h4>2300372</h4>
+                                     <!-- Instagram -->
+                                    <a href="#" onclick="window.open('https://instagram.com/daffarnksm', 'popup', 'width=600,height=600'); return false;">
+                                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" class="sosmed-icon">
+                                    </a>
+
+                                    <!-- WhatsApp -->
+                                    <a href="#" onclick="window.open('https://wa.me/62881024543040', 'popup', 'width=600,height=600'); return false;">
+                                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" class="sosmed-icon">
+                                    </a>
+
+                                    <!-- Twitter -->
+                                    <a href="#" onclick="window.open('https://twitter.com/daffarksm', 'popup', 'width=600,height=600'); return false;">
+                                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter" class="sosmed-icon">
+                                    </a>
+                                </div> 
+                                <p>
+                                </p> 
+                            </div> 
+                        </div> 
+
+<footer style="text-align: center; padding: 20px; background-color: #424e35;">
+  <p>Contact: <a href="mailto:daffarnksm@gmail.com">Daffarnksm@gmail.com</a></p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

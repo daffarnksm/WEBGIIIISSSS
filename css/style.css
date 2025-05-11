@@ -1,0 +1,294 @@
+/* Style Kerangka Secara Umum */
+html {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    caret-color: transparent;
+    }
+    body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+    /* Seluruh Komponen Pada Header */
+    .logo {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+    }
+    .logo img {
+    width: 80px; /* Set the width of the logo */
+    margin-right: 10px; /* Add some space between the image and title */
+    }
+    .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    }
+
+    .sosmed-container {
+        display: flex;
+        gap: 10px; /* Jarak antar ikon */
+        align-items: center;
+      }
+  
+      .sosmed-icon {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        filter: invert(1);
+      }
+
+    
+    header nav {
+    display: flex;
+    justify-content: flex-start;
+    }
+    header nav a {
+    color:#E8EBD2;
+    text-decoration:none;
+    font-weight: bold;
+    margin: 0 20px;
+    }
+    #navbar {
+        background-color: #0fb562; /* Soft blue color without transparency */
+        color: #ffffff;
+        padding: 20px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        border-bottom: 2px solid #de0000;
+        font-family: 'Montserrat', sans-serif;
+        transition: background-color 0.3s ease; /* Smooth transition for background color */
+        }
+        .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        }
+        .logo h1 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: bold;
+        }
+        nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        }
+        nav ul li {
+        display: inline;
+        margin-left: 20px;
+        }
+        nav ul li:first-child {
+        margin-left: 0;
+        }
+        nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 16px;
+        position: relative; /* Needed for pseudo-element positioning */
+        }
+        nav ul li a::before {
+        content: '';
+        position: absolute;
+        top: -7px; /* Move the pseudo-element up by half of the hover size */
+        left: -7px; /* Move the pseudo-element left by half of the hover size */
+        width: calc(100% + 14px); /* Expand the width by 14 pixels (7px on each side) */
+        height: calc(100% + 14px); /* Expand the height by 14 pixels (7px on each side) */
+        background-color: #133369; /* Background color without transparency */
+        border-radius: 10px; /* Rounded corners */
+        z-index: -1; /* Behind the text */
+        transition: background-color 0.3s ease; /* Smooth transition for background color */
+        }
+        nav ul li a:hover::before {
+        background-color: #197e05; /* Adjusted hover color without transparency */
+        }
+        nav ul li a:hover {
+            color: #E8EBD2; /* Adjusted font color to match hover color */
+}
+
+.hero-section {
+    margin-top: 60px; /* Adjust margin to make room for fixed navbar */
+    background-image:
+    url('https://asset.kompas.com/crops/GEIiQSsEkCKrIGWEjOp_GaYHIHA=/0x0:1000x667/1200x800/data/photo/2022/07/25/62dec6809a479.jpg'); /* Replace
+    'city-background.jpg' with your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#ffffff;
+    text-align: center;
+    }
+    .hero-content {
+    max-width: 1800px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #E8EBD2;
+    }
+
+/* Map Section */
+#map {
+    width: 95%;
+    height: 800px;
+    background-color: lightgray;
+    margin: 40px auto; /* Adjusted margin for space */
+    border: 2px solid #79c6ab; /* Add a border with a subtle color */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative; /* Relative positioning for child elements */
+    z-index: 1; /* Set z-index to be behind the header */
+    }
+    #map-section h2 {
+    text-align: center;
+    margin-top: 20;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #3913c2;
+    color-scheme: #E8EBD2;
+    }
+
+    /* Data Section Styles */ 
+#data-section { 
+    background-color: #E8EBD2; 
+    padding: 60px 0; 
+    color: #d0eb0a; 
+} 
+ 
+#data-section .container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    justify-content: flex-start; 
+    background-color: #E8EBD2; 
+} 
+
+
+ 
+#data-section h2 { 
+    text-align: center; 
+    font-size: 36px; 
+    margin-bottom: 40px; 
+    clear: both; 
+    color: #063ad6; 
+} 
+  
+ 
+.data-item { 
+    background-color: #0077ff; 
+    border-radius: 10px; 
+    box-shadow: 0 10px 2px rgb(231, 178, 118); 
+    overflow: hidden; 
+    margin: auto 10px; 
+} 
+ 
+.data-item img { 
+width: 100%; 
+height: auto; 
+border-top-left-radius: 10px; 
+border-top-right-radius: 10px; 
+} 
+.description { 
+padding: 20px; 
+height: 500px; 
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+} 
+.description h3 { 
+margin-top: 0; 
+font-size: 24px; 
+} 
+.description p { 
+color: #E8EBD2; 
+font-size: 16px; 
+}
+
+/* Author Section */ 
+#author-section { 
+    background-color: #0077ff; 
+    padding: 40px 20px; 
+    font-family: 'Montserrat', sans-serif;
+    color: #E8EBD2; 
+    text-align: justify; 
+} 
+ 
+.author-content { 
+    max-width: 800px; 
+    margin: 0 auto; 
+} 
+ 
+.author-content h2 { 
+    text-align: center; 
+} 
+ 
+.author-name { 
+    text-align: center; /* Center-align only the author's name */ 
+} 
+ 
+.profile-picture { 
+    height: 100px; 
+    width: auto; 
+    border-radius: 50%; 
+    margin: 0 auto 20px; /* Center the picture horizontally and add margin at the bottom */ 
+    display: block; /* Ensure it behaves as a block element */ 
+} 
+
+.nav-button {
+    background-color: #1d2c6b;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+    display: inline-block;
+  }
+ 
+#footer { 
+    background-color: #5290ed; 
+    color: #d9d2eb; 
+    text-align: center; 
+    padding: 20px; 
+    font-family: 'Montserrat', sans-serif; 
+    flex-shrink: 0; 
+} 
+
+.legend {
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+    background-color: #ffffff; /* warna solid putih */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #000;
+    max-width: 220px;
+  }
+  
+  .legend div {
+    width: 30px;
+    height: 15px;
+    float: left;
+    margin-right: 8px;
+    opacity: 1; /* pastikan tidak transparan */
+  }
+  
+  div.legend.leaflet-control br {
+    clear: both;
+  }
+
+/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat927.ani), url(https://cur.cursors-4u.net/nature/nat-10/nat927.png), auto !important;} /* End https://www.cursors-4u.com */
+
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }

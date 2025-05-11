@@ -154,7 +154,7 @@ const home = {
 // === LANDCOVER ===
 const landcover = new L.LayerGroup();
 
-$.getJSON("/asset/data-spasial/landcover_ar.json", function (data) {
+$.getJSON("./asset/data-spasial/landcover_ar.json", function (data) {
   L.geoJson(data, {
     style: function(feature) {
       switch (feature.properties.REMARK) {
@@ -189,7 +189,7 @@ var symbologyPoint = {
 };
 
 const jembatanPT = new L.LayerGroup();
-$.getJSON("/asset/data-spasial/jembatan_pt.json", function (data) {
+$.getJSON("./asset/data-spasial/jembatan_pt.json", function (data) {
   L.geoJSON(data, {
     pointToLayer: function (feature, latlng) {
       return L.circleMarker(latlng, symbologyPoint);
@@ -200,7 +200,7 @@ jembatanPT.addTo(map);
 
 // === BATAS ADMINISTRASI ===
 const adminKelurahanAR = new L.LayerGroup();
-$.getJSON("/asset/data-spasial/admin_kelurahan_ln.json", function (data) {
+$.getJSON("./asset/data-spasial/admin_kelurahan_ln.json", function (data) {
   L.geoJSON(data, {
     style: {
       color: "black",
